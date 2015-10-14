@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Words from './components/words';
+import WordList from './components/wordlist';
 
-ReactDOM.render(<Words baseUrl="https://dicodigital-api.herokuapp.com/word/?format=json" />, document.getElementById('example'));
+ReactDOM.render(<WordList url="https://dicodigital-api.herokuapp.com/word/?format=json" />, document.getElementById('wordList'));
