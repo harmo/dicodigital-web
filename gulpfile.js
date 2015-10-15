@@ -4,6 +4,10 @@ var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var connect = require('gulp-connect');
 
+var paths = {
+  mdl: ['node_modules/material-design-lite/material.min.css', 'node_modules/material-design-lite/material.min.js']
+}
+
 gulp.task('build', function() {
   return browserify({entries: 'src/app.js', extensions: ['.js'], debug: true})
     .transform(babelify)
@@ -13,10 +17,15 @@ gulp.task('build', function() {
     .pipe(connect.reload());
 });
 
-gulp.task('watch', ['build'], function() {
+gulp.task('watch', ['material', 'build'], function() {
   gulp.watch('src/**/*.js', ['build']);
   gulp.watch('*.html', ['livereload']);
 });
+
+gulp.task('material', function() {
+  return gulp.src(paths.mdl)
+    .pipe(gulp.dest('dist'))
+})
 
 gulp.task('connect', function() {
   connect.server({
