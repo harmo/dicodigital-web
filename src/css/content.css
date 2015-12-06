@@ -1,0 +1,14 @@
+.dd-Content {
+  display: flex;
+  margin: 0 -10px;
+}
+
+  .dd-Content__main {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .dd-Content__aside {
+    flex-basis: 30%;
+    margin: 10px;
+  }

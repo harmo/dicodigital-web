@@ -1,0 +1,11 @@
+.dd-Abc {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+  .dd-Abc__letter {
+    flex-grow: 1;
+    text-align: center;
+  }

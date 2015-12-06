@@ -5,104 +5,139 @@
     <meta charset="UTF-8">
     <title>Dico Digital</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
-    <script src="/node_modules/material-design-lite/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/index.css">
 </head>
 
 <body>
-    <div class="dd-Title">
-        <h1>Dico Digital</h1>
+    <div class="dd-Header">
+        <div class="dd-Header__item dd-Title">
+            <h1>Dico Digital</h1>
+            <p>Un doigt de vocabulaire pour comprendre le monde numérique</p>
+        </div>
+        <nav class="dd-Header__item dd-Nav">
+            <div class="dd-Nav__item">
+                <div class="dd-Nav__item__icon">
+                    <span class="fa fa-home"></span>
+                </div>
+                <div class="dd-Nav__item__text">Accueil</div>
+            </div>
+            <div class="dd-Nav__item">
+                <div class="dd-Nav__item__icon">
+                    <span class="fa fa-plus-square"></span>
+                </div>
+                <div class="dd-Nav__item__text">Contribuer</div>
+            </div>
+            <div class="dd-Nav__item">
+                <div class="dd-Nav__item__icon">
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="dd-Nav__item__text">Best of</div>
+            </div>
+            <div class="dd-Nav__item">
+                <div class="dd-Nav__item__icon">
+                    <span class="fa fa-random"></span>
+                </div>
+                <div class="dd-Nav__item__text">Aléatoire</div>
+            </div>
+        </nav>
     </div>
-    <nav class="dd-Nav">
-        <div><span class="fa fa-home"></span>Accueil</div>
-        <div><span class="fa fa-plus-square"></span>Contribuer</div>
-        <div><span class="fa fa-star"></span>Best of</div>
-        <div><span class="fa fa-random"></span>Aléatoir</div>
-    </nav>
     <div class="dd-Search">
-        <div class="InputAddOn">
-            <input class="InputAddOn-field">
-            <span class="InputAddOn-item"><span class="fa fa-search"></span></span>
+        <div class="dd-InputAddOn">
+            <input class="dd-InputAddOn__field">
+            <span class="dd-InputAddOn__item"><span class="fa fa-search"></span></span>
         </div>
     </div>
     <nav class="dd-Abc">
-        <div>#0-9</div>
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-        <div>D</div>
-        <div>E</div>
-        <div>F</div>
-        <div>G</div>
-        <div>H</div>
-        <div>I</div>
-        <div>J</div>
-        <div>K</div>
-        <div>L</div>
-        <div>M</div>
-        <div>N</div>
-        <div>O</div>
-        <div>P</div>
-        <div>Q</div>
-        <div>R</div>
-        <div>S</div>
-        <div>T</div>
-        <div>U</div>
-        <div>V</div>
-        <div>W</div>
-        <div>X</div>
-        <div>Y</div>
-        <div>Z</div>
+        <div class="dd-Abc__letter">#0-9</div>
+        <div class="dd-Abc__letter">A</div>
+        <div class="dd-Abc__letter">B</div>
+        <div class="dd-Abc__letter">C</div>
+        <div class="dd-Abc__letter">D</div>
+        <div class="dd-Abc__letter">E</div>
+        <div class="dd-Abc__letter">F</div>
+        <div class="dd-Abc__letter">G</div>
+        <div class="dd-Abc__letter">H</div>
+        <div class="dd-Abc__letter">I</div>
+        <div class="dd-Abc__letter">J</div>
+        <div class="dd-Abc__letter">K</div>
+        <div class="dd-Abc__letter">L</div>
+        <div class="dd-Abc__letter">M</div>
+        <div class="dd-Abc__letter">N</div>
+        <div class="dd-Abc__letter">O</div>
+        <div class="dd-Abc__letter">P</div>
+        <div class="dd-Abc__letter">Q</div>
+        <div class="dd-Abc__letter">R</div>
+        <div class="dd-Abc__letter">S</div>
+        <div class="dd-Abc__letter">T</div>
+        <div class="dd-Abc__letter">U</div>
+        <div class="dd-Abc__letter">V</div>
+        <div class="dd-Abc__letter">W</div>
+        <div class="dd-Abc__letter">X</div>
+        <div class="dd-Abc__letter">Y</div>
+        <div class="dd-Abc__letter">Z</div>
     </nav>
-    <div class="dd-PageTitle">B</div>
-    <div class="dd-Word-List">
-        <div class="dd-Word-List__item">
-            <div>Back-end</div>
-            <span>nom masculin</span>
-            <span>Arrière-guichet, lieu de prédilection des gros barbus fan de Linux.</span>
-            <div>
-                <span>voir aussi</span>
-                <span>Front-End</span>
-            </div>
-            <div>
-                <span>merci</span>
-                <span>Natouille</span>
-            </div>
-            <div>
-                <span class="fa fa-facebook-official"></span>
-                <span class="fa fa-twitter"></span>
-            </div>
-            <div>
-                <span>J'ai pas compris</span>
-                <span class="fa fa-question-circle"></span>
-            </div>
-            <div>
-                <span>42</span>
-                <span class="fa fa-star"></span>
+    <div class="dd-Page-title">B</div>
+    <div class="dd-Content">
+        <div class="dd-Content__main">
+            <div class="dd-Word-List">
+                <div class="dd-Word-List__item">
+                    <h1>Back-end</h1>
+                    <span>nom masculin</span>
+                    <p>Arrière-guichet, lieu de prédilection des gros barbus fan de Linux.</p>
+                    <div>
+                        <span>voir aussi</span>
+                        <span>Front-End</span>
+                    </div>
+                    <div>
+                        <span>merci</span>
+                        <span>Natouille</span>
+                    </div>
+                    <div>
+                        <span class="fa fa-facebook-official"></span>
+                        <span class="fa fa-twitter"></span>
+                    </div>
+                    <div>
+                        <span>J'ai pas compris</span>
+                        <span class="fa fa-question-circle"></span>
+                    </div>
+                    <div>
+                        <span>42</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="dd-Word-List__item">
+                    <h1>Back-up</h1>
+                    <span>nom masculin</span>
+                    <p>Déodorant pour sudoer.</p>
+                    <div>
+                        <span>merci</span>
+                        <span>ticabri</span>
+                    </div>
+                    <div>
+                        <span class="fa fa-facebook-official"></span>
+                        <span class="fa fa-twitter"></span>
+                    </div>
+                    <div>
+                        <span>J'ai pas compris</span>
+                        <span class="fa fa-question-circle"></span>
+                    </div>
+                    <div>
+                        <span>64</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="dd-Word-List__item">
-            <div>Back-up</div>
-            <span>nom masculin</span>
-            <span>Déodorant pour sudoer.</span>
-            <div>
-                <span>merci</span>
-                <span>ticabri</span>
-            </div>
-            <div>
-                <span class="fa fa-facebook-official"></span>
-                <span class="fa fa-twitter"></span>
-            </div>
-            <div>
-                <span>J'ai pas compris</span>
-                <span class="fa fa-question-circle"></span>
-            </div>
-            <div>
-                <span>64</span>
-                <span class="fa fa-star"></span>
-            </div>
+        <div class="dd-Content__aside">
+            <aside class="dd-Contribute">
+                Je veux contribuer en proposant un mot
+                <form action="">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </form>
+            </aside>
         </div>
     </div>
     <script src="dist/bundle.js"></script>

@@ -1,0 +1,15 @@
+.dd-Nav {
+  display: flex;
+  margin: auto 0;
+}
+
+  .dd-Nav__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+
+    .dd-Nav__item__icon {
+      font-size: 30px;
+      text-align: center;
+    }
