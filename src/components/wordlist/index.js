@@ -34,5 +34,5 @@ export default React.createClass ({
   },
   previousHandler(event) {
     this.fetch(this.state.previous);
-  }
+  },
 });
